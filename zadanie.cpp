@@ -2,43 +2,6 @@
 
 
 #include <iostream>
-using namespace std;
-
-
-void func (int* a, const int n)
-{
-    
-    
-    for (int i = -1; i <= n+12; i++)
-    {
-        i += 2;
-        cout << i << " "  ;
-    }
-   
-  
-    cout << "\n";
-}
-
-int main()
-{
-    
-    const int n = 8;
-    int a[n] = {};
-
-   
-    func(a,n);
-
-    
-    return 0;
-
-    
-}
-
-
-// 2е
-
-
-#include <iostream>
 
 using namespace std;
 
@@ -81,4 +44,39 @@ int main()
     print(a, n);
 
 
+}
+
+//2e
+
+#include <iostream>
+using namespace std;
+
+
+void func (int* a, const int n)
+{
+    
+    
+    for (int i = -1; i <= n+12; i++)
+    {
+        i += 2;
+        cout << i << " "  ;
+    }
+   
+  
+    cout << "\n";
+}
+
+int main()
+{
+    
+    const int n = 8;
+    int a[n] = {};
+
+   
+    func(a,n);
+
+    
+    return 0;
+
+    
 }
