@@ -1,82 +1,104 @@
-//1е
-
-
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
-void swap(int* c , int* d) {
-    int t;
-    t = *c;
-    *c = *d;
-    *d = t;
-
-}
-
-void print(int* a, const int n)
+int main(int argc, const char* argv[])
 
 {
-    for (int i = 0; i < n; i++)
 
-        cout << a[i] << " ";
-    cout << "\n";
+	ofstream  fos("songpart1.txt", ofstream::app);
+	fos << "All the mistakes" "\n"
+		"The rough breaks" "\n"
+		"The bad taste" "\n"
+		"The heart aches" "\n"
+		"And getting nowhere" "\n"
 
+		"All the pitfalls" "\n"
+		"The brick walls" "\n"
+		"The fuck it alls" "\n"
+		"The bad calls" "\n"
+		"And all the despair" "\n"
 
+		"When I go another round" "\n"
+		"I can't help but fight myself" "\n"
+		"But you're blind to all the scars" "\n"
+		"That I can see so well" "\n"
 
-}
+		"All I ever did was get it wrong" "\n"
+		"All I ever had was a sad song" "\n"
+		"But I can see the proof looking in your eyes" "\n"
+		"Yeah I must have done something right" "\n"
 
+		"Cause if I'm really such a fool" "\n"
+		"How come I'm the one who's lying next to you" "\n"
+		"It's in your touch when you hold me tight" "\n"
 
-int main()
-{
+		"Yeah I must have done something right" "\n"
+		"Must have done something right" "\n"
+		"Must have done something right" "\n"
 
-    int x = 1;
-    int y = 0;
+		"When you hold me" "\n"
+		"And pull me" "\n"
+		"From my knees" "\n"
+		"To my feet" "\n"
+		"I keep on rising" "\n"
+		"Rising" "\n"
 
+		"Nothing else fits" "\n"
+		"But your kiss" "\n"
+		"On my lips" "\n"
+		"I know that this" "\n"
+		"Is the only real thing" "\n"
+		"Real thing" "\n";
+	fos.close();
 
-    const int n = 10;
-    int a[n] = { x, x, y, y, x, y, x, x, y, y };
+	ofstream fos2("songpart2.txt", ofstream::app);
+	fos2 << "You're the water in my well" "\n"
+		"That I've been so long without" "\n"
+		"You put your heart in to my hands" "\n"
+		"Like you never had a doubt" "\n"
 
+		"All I ever did was get it wrong" "\n"
+		"All I ever had was a sad song" "\n"
+		"But I can see the proof looking in your eyes" "\n"
+		"Yeah I must have done something right" "\n"
+		"Cause if I'm really such a fool" "\n"
+		"How come I'm the one who’s lying next to you" "\n"
+		"It's in your touch when you hold me tight" "\n"
 
-    print(a, n);
+		"Yeah I must have done something right" "\n"
+		"Something right" "\n"
+		"Something right" "\n"
+		"Yeah I must have done something right" "\n"
+		"I know I did something right" "\n"
 
-    swap(&x,&y);
+		"I feel it's my only gift" "\n"
+		"I know I was made for this" "\n"
+		"There's nothing else I'm sure of" "\n"
+		"But I'm certain of your love" "\n"
+		"I'm a thousand miles away from yesterday" "\n"
 
-    print(a, n);
+		"All I ever did was get it wrong" "\n"
+		"All I ever had was a sad song" "\n"
+		"But I can see the proof looking in your eyes" "\n"
+		"That I must have done something right" "\n"
 
+		"Cause if I'm really such a fool" "\n"
+		"How come I'm the one who’s lying next to you" "\n"
+		"It's in your touch when you hold me tight" "\n"
 
-}
+		"I must have done something right" "\n"
+		"Something right" "\n"
+		"Something right" "\n"
+		"Yeah I must have done something right" "\n"
+		"Right, right, right, right, right" "\n"
+		"I know I did something right" "\n"
+		"Something right" "\n"
+		"I know I did something right" "\n"
 
-//2e
+		"For the first time in my life" "\n"
+		"I know I did something right;" "\n";
 
-#include <iostream>
-using namespace std;
-
-
-void func (int* a, const int n)
-{
-    
-    
-    for (int i = -1; i <= n+12; i++)
-    {
-        i += 2;
-        cout << i << " "  ;
-    }
-   
-  
-    cout << "\n";
-}
-
-int main()
-{
-    
-    const int n = 8;
-    int a[n] = {};
-
-   
-    func(a,n);
-
-    
-    return 0;
-
-    
+	fos2.close();
 }
